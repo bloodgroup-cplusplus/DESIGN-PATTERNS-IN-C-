@@ -36,14 +36,15 @@ The STL has particular ways of doing things, and when you're working with the ST
 ## Prefer consts, enums and inline to #defines 
 
 **Avoid using code like**
-'''
+```C++
+
 #define ASPECT 1.653
-'''
+```
 
 **Instead replace it with code like**
 
-'''
+``` C++
 const double Aspect = 1.653;
-'''
+```
 
 
