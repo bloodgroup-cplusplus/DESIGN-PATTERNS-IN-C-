@@ -38,14 +38,12 @@ The STL has particular ways of doing things, and when you're working with the ST
 **Avoid using code like**
 '''
 #define ASPECT 1.653
-
 '''
 
 **Instead replace it with code like**
 
 '''
 const double Aspect = 1.653;
-
 '''
 
 
