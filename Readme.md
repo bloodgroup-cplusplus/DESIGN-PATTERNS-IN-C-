@@ -19,4 +19,33 @@ for object-oriented mostly directly apply.**
 
 
 ## Template C++.
-**  
+**This is the generic programming part of C++. the one that most programmers have the least experience with.Template
+considerations pervade C++. and it's not uncommon for rules for good programming to include special template-only 
+Templates are so powerful they give rise to completely new programming paradigm, template metaprogramming (TMP)**.
+
+
+## The STL.
+**The STL is a template libray but it's a very special template library. Its conventions regarding containers,iterators
+algorithms, and function objects mesh beautifully, but templates and libraries can be built around other ideas too. 
+The STL has particular ways of doing things, and when you're working with the STL, you need to follow the conventions**.
+
+
+# GUIDELINES AND RULES TO BE FOLLOWED 
+
+
+## Prefer consts, enums and inline to #defines 
+
+**Avoid using code like**
+'''
+#define ASPECT 1.653
+
+'''
+
+**Instead replace it with code like**
+
+'''
+const double Aspect = 1.653;
+
+'''
+
+
