@@ -48,3 +48,42 @@ const double Aspect = 1.653;
 ```
 
 
+**Use standard string library from C++ rather than using const char**
+```C++
+const char*constauthorName = "ScottMeyers";
+```
+**Instead of using the above line consider replacing it with line given below**
+```C++
+const std::string authorName("Scott Meyers");
+```
+
+**The second special case concerns class-specific constants.to limit the scope of a constant to a class,
+you must make it a member, and to ensure there's at most one copy of the constant, you must make it a 
+static member**
+```C++
+class GamePlayer
+{
+    private:
+        static const int NumTurns = 5;
+        int scores[NumTurns];
+};
+```
+
+**Older compilers may not accept the syntax above, because it used to be illegal to provide an initial
+value for a static class member at its point of declaration. Furthermore , in -class initialization is allowed
+only for integral types and only for constants, In cases where the above syntax can't be used
+you put the initital value at the point of definition.**
+
+```C++
+class CostEstimate
+{
+    private:
+        static const double FudgeFactor; //declration of static class 
+        //constant;goes in header file (.h or .hpp file)
+};
+
+const double CostEstimator::FudgeFactor = 1.35; // definition of static class constant goes in implementation file (.cpp file)
+
+```
+
+
