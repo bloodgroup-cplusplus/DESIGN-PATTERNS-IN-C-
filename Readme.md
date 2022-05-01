@@ -85,5 +85,31 @@ class CostEstimate
 const double CostEstimator::FudgeFactor = 1.35; // definition of static class constant goes in implementation file (.cpp file)
 
 ```
+**Regarding the keyword const if the word const appears to the left of the asterisk , what's pointed to is constant.
+if the word const appears to the right of the asterisk, the pointer itself is constant; if const appears on both sides,
+both are constant.**
+
+**The purpose of const on member functions is to identify which member functions may be invoked on const objects. 
+Such member functions are important as they make the interface of a class easier to understand . It's important 
+to know which functions may modify an object and which may not. They make it possible to work with const objects**
+
+```C++
+class TextBlock
+{
+    public:
+    const char &operator[] (std::size_t position ) const //operator[] for const objects
+    {
+        return text[position];}
+    char & operator [] (std::size_t position) //operator [] for non-const objects
+    {
+        return text[position];}
+
+    private:
+    std::string text;
+};
+
+TextBlock's operator[]s can be used like this
+TextBlock tb("Hello")
+std::cout<<tb[0]; // calls non-const  //TextBlock::operator[]
 
 
