@@ -4,6 +4,7 @@
 **Project structrue has to be easily understandble and should isolate different functionalites as much as possible**
 
 **No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure**.
+
 **project_root
   - include
   - src
@@ -15,6 +16,7 @@
   - README
   - LICENSE
   - misc files**
+
 **Let's have a look at each and every file/directory means**
 
 **1 include - THis is the place where all our header files live**
