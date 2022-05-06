@@ -1,8 +1,10 @@
 # UNDERSTANDING PROJECT STRUCTURE IN C++
 **Read this article here [C/C++ Project Structure] (https://dev.to/narasimha1997/understanding-c-c-build-system-by-building-a-simple-project-part-1-4fff)**
-**Project structrue has to be easily understandble and should isolate different functionalites as much as possible.
-No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure:
-project_root
+
+**Project structrue has to be easily understandble and should isolate different functionalites as much as possible**
+
+**No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure**.
+**project_root
   - include
   - src
       - module-1
@@ -14,8 +16,11 @@ project_root
   - LICENSE
   - misc files**
 **Let's have a look at each and every file/directory means**
+
 **1 include - THis is the place where all our header files live**
+
 **2 src - The direcotry that contains all our source code. We can have multiple sub-directories/modules inside src. Also we can have a main function file insider src**.
+
 **3 makefile - Makefiles are used by make command , we wil be using make to build our project  
 
 # COMMON C++ CONVENTIONS AND DESIGN PATTERNS 
