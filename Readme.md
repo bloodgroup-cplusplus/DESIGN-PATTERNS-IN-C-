@@ -23,7 +23,29 @@ project root
 
 **2 src - The direcotry that contains all our source code. We can have multiple sub-directories/modules inside src. Also we can have a main function file insider src**.
 
-**3 makefile - Makefiles are used by make command , we wil be using make to build our project  
+**3 makefile - Makefiles are used by make command , we wil be using make to build our project** 
+
+**We have a project called memlogger above here the project structre used here is given below**
+
+memlogger
+   - bin  - will explain the need for this
+   - include
+       - free_memory_api.h
+       - file_writer.h
+   - src
+       - free_memory_api
+          - free_memory_api.c
+       - file_writer
+          - file_writer.c
+       - main.c
+   - Makefile
+# What are header files?
+   
+   **Header files are blueprints of our actual C code. For every C module we write, it is a good practice to export the header-file. 
+   These header files are used by the compiler to understand what all functions are exported by a module. Once compilation is done, 
+   header files are not used anywhere. The actual use of header files comes into picture when our project/module is used as a module in
+   some other project, other programmers can simply include our header file to use the function declrations we exported.**
+
 
 # COMMON C++ CONVENTIONS AND DESIGN PATTERNS 
 
