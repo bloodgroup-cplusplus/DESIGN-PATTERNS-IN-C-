@@ -5,7 +5,7 @@
 
 **No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure**.
 
-**project_root
+project root
   - include
   - src
       - module-1
@@ -15,7 +15,7 @@
   - Makefile
   - README
   - LICENSE
-  - misc files**
+  - misc files
 
 **Let's have a look at each and every file/directory means**
 
