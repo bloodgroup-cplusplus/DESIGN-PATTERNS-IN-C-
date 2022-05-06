@@ -46,6 +46,36 @@ memlogger
    header files are not used anywhere. The actual use of header files comes into picture when our project/module is used as a module in
    some other project, other programmers can simply include our header file to use the function declrations we exported.**
 
+**The project can be built in a single command, We have divided this into three phases**.
+
+**1.File_writer : This make rule generate file_writer.o object file under ./bin**
+
+**2.Free_memory_api: This rule generates free_memory_api.o under ./bin.**
+
+**3.Project:This builds the entire project, it generates main.o and links main.o with other two objects files to create a standalone executable called memlogger**
+
+**Excecute these commands with make**
+
+**Step-1 . File_writer. o**
+
+**make file_writer** 
+
+**Step-2.free_memory_api.o**
+
+**step-3 final binary**
+**make project**
+
+# What happened under the hood?
+
+**It is important to understand the build process we used here. To understand that, we need to know the concept of object files**.
+
+#What we did in the makefile??
+
+**We defined three rules, each rule builds a module, the third rule goes ahead by one step and links all the three modules**
+
+**We used gcc compiler, (g++ for C++ projects). Options used:**
+
+**
 
 # COMMON C++ CONVENTIONS AND DESIGN PATTERNS 
 
