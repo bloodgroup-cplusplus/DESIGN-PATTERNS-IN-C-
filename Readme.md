@@ -1,4 +1,4 @@
-#UNDERSTANDING PROJECT STRUCTURE IN C++
+# UNDERSTANDING PROJECT STRUCTURE IN C++
 **Read this article here [C/C++ Project Structure] (https://dev.to/narasimha1997/understanding-c-c-build-system-by-building-a-simple-project-part-1-4fff)**
 **Project structrue has to be easily understandble and should isolate different functionalites as much as possible.
 No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure:
