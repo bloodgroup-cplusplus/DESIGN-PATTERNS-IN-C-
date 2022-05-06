@@ -1,4 +1,25 @@
+#UNDERSTANDING PROJECT STRUCTURE IN C++
+**Read this article here [C/C++ Project Structure] (https://dev.to/narasimha1997/understanding-c-c-build-system-by-building-a-simple-project-part-1-4fff)**
+**Project structrue has to be easily understandble and should isolate different functionalites as much as possible.
+No one will ever stop us from using our own project, but most of the open source projects built with C/ C++ use this structure:
+project_root
+  - include
+  - src
+      - module-1
+      - module-2
+      - module-n
+      - main.c/main.cc (depends on the project)
+  - Makefile
+  - README
+  - LICENSE
+  - misc files**
+**Let's have a look at each and every file/directory means**
+**1 include - THis is the place where all our header files live**
+**2 src - The direcotry that contains all our source code. We can have multiple sub-directories/modules inside src. Also we can have a main function file insider src**.
+**3 makefile - Makefiles are used by make command , we wil be using make to build our project  
+
 # COMMON C++ CONVENTIONS AND DESIGN PATTERNS 
+
 **These are important statements derived directly from the book [Effective C++] (https://www.amazon.com/Effective-Specific-Addison-Wesley-Professional-Computing-ebook/dp/B004V4420U/ref=sr_1_2?crid=B7OBYHH2NS3F&keywords=effective+c%2B%2B&qid=1651293361&sprefix=effective+c%2B%2B%2Caps%2C541&sr=8-2)**
 
 **The easiest way to view C++ not as a single language but a federation of related languages.**
@@ -111,5 +132,14 @@ class TextBlock
 TextBlock's operator[]s can be used like this
 TextBlock tb("Hello")
 std::cout<<tb[0]; // calls non-const  //TextBlock::operator[]
+```
+
+##Things to remember while using const 
+**Declaring something const helps compilers detect usage errors, const can be applied to objects at any scope, to function parameters
+and return types, and to member functions as a whole**
+
+**Compilers enforce bitwise constness, but you should program using logical constness**
+
+**When const and non-const member functions have essentially identical implementations, code duplication can be avoided by having the non-const version call the const version.**
 
 
