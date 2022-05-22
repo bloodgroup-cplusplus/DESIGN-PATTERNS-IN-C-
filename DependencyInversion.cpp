@@ -4,8 +4,10 @@
  * Abstractions shouldn't depend on details rather details should depend on abstractions
  * You don't want to depend on the concrete type more than you need to 
  * We have abstractions in the first place so that we can chnage the underlying principle 
+ * Never depend on anything concrete, only depend on abstractions
+ * High level modules should not depend on low level modules. They should depend on abstractions. 
+ * Able to change an implementation easily without altering the high level code 
  */
-
 
 #include<iostream>
 #include<cstdio>
