@@ -1,0 +1,32 @@
+When should you Avoid APIS?
+
+* The purpose of an API is to provide a robust and stable interface for 
+other developers to use. 
+
+* As such, the level of quality, planning, documentation, testing, support, and
+maintenance is far higher for an API than for software that is to be used within a 
+single operation . 
+
+* On the flip side of the coin, consider that you are a software developer
+who wants to use a third party API in your application . 
+However, there may be cases where you wish to avoid using a particular API
+and pay the cost to implement the code yourself or look for an alternate solution 
+For example.
+
+
+    * License Restrictions : An API may provide everything that you need
+    functionality-wise, but the license restrictions may be prohibitive for your needs. 
+    Using a package in your program would require you to release the entire source code for your application, 
+    a constraint that may not be acceptable for a commercial application . 
+    Other licenses, such as the GNU (LGPL) or more permissive and tend to be 
+    more common for software libraries. Another licensing aspect is that the dolloar cost 
+    for a commercial API may be too high for your project or the licensing 
+    terms may be too restrictive, such as requiring a license fee per developer 
+    or even per user . 
+
+
+
+
+    * Functionality Mismatch :
+    *Lack of source Code
+    * Lack of documentation 
