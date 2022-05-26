@@ -1,0 +1,99 @@
+You will often use APIs from several architectural levels when building
+a large software product. Secoind Life Viewer is a software developed by Linden Lab.
+It is a large open source program that lets users interact with each other in an online 3d virtual world, 
+With the ability to perform voice chat and text messaging between users. 
+
+The layer of Internal APIs which are the set of modules that a company 
+develops in-house for a particular product, or suite of products. 
+
+File IO, threading routines, and son on to APIs that provide the core business logic of the application,
+all the way up to custom GUI APIs for managing the application's user interface
+
+
+
+
+-------------SECOND LIFE VIEWER--------------------- -> Application code
+
+--common---- ---message--------audio------ render---- -> Internal APIs
+
+--OpenGl---- ---APR---- Boost------ Expat------Openssl -> third party apis
+
+--------STandard C library -------  ----Standard TEmplate library---- -> Language APIS
+
+-----Win32 / Mac OS x/ Linux Kernal API --------------- -> OS APIs
+
+
+
+List of open- and closed -source APIs used by the second Life Viewr
+
+
+API             DESCRIPTION
+APR             the apache portable runtime
+boost           set of portable c++ utility libraries
+opengl          3d graphics rendering engine
+zlib            lossless data compression library
+viviox          commercial voice chat library 
+
+and so on 
+
+
+APIs and SDKs
+The term software development Kit (SDK) is closely related to the term API
+Essentially, and SDK is a platform specific package that you install on your computer
+in order to build applications against one or more APIs
+
+At a minimum, an SDK will include the header (.h) files for you to compile
+your program against and the library (.dylib,.so, .dll) files that provide
+the API implementation for you to link your application against. However, an SDK may include
+other resources to help you use the APIs, such as documentation, example source code, and supporting tools.
+
+As an example, Apple publishes various APIs that let you write applications that run on iphone, ipod
+touch, and ipad devices. Examples include the UIKit user interface API, the webkit API to embed web browser
+functionality in your applications, and the core audio api for audio services.
+
+Apple also provides the iphone SDK, which is a downloadable installer that contains the frameworks( headers and libraries) 
+that implemented the various iphone APIs. Theser are the files that you compile and link against to give your
+programs access to the underlying functionality of the APIs.
+The Iphone SDK also includes API documentation, sample code, various templates for APPle's integrated
+dev environmant code xcode, 
+
+
+FILE FORMATS AND NETWORK PROTOCOLS
+
+ther are severla other forms of communication "contracts"
+commonly used in computer applications. One of the most familiar is file fomrat.
+This is a way to save in-memory data to a file on disk using a well-known
+layout of those data. 
+JPEG file interchange format (JFIF) is an image file format for exchanging
+JPEG-encoded imagery, commonly given the .jpg or .jpeg file extension. 
+Given the format for a data file, such as JFIF/JPEG fomat any program
+can read and write image files in that format. This allows the easy interchange of image data
+between different users and the proliferation of image viewers and tools that can operate
+on those images. 
+
+
+Client/server applications, peer-to-peer applications, and middleware services work by sending
+data back and forward using an established protocol, usually over a network socket. 
+For example, the subversion version control system uses a client/server architecture where the 
+master repositor is stored on the server and individual clients synchronize their local client with the server
+In order to make this work, the client and the server must agree upon the format of those data transmitted across the network. 
+This is known as the client/server protocol or line protocol. 
+If the client sends a data stream that does not conform to this protocol, then the server
+will not be able to understand the message. It is therefore critical that the specification of the client/server
+protocol is well defined and that both the client and the server conform to the specification . 
+
+
+JFIF file format header specification 
+
+
+Field        Byte Size        Description 
+APP0Marker     2              Always 0xFFE0
+length         2              length of segment excluding aPPo marker
+identifier     5             always 0x4a46494600
+...
+...
+
+
+whenever you creeate a file format or client/server protocol, you should also create an API for it. 
+this allows details of the specification, and any future changes to it, to be centralized and hidden . 
+
