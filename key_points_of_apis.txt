@@ -1,0 +1,68 @@
+The following are the key points about APIs
+
+Qualities : What is good API? A wide gamut of qualities that you should be aware of when
+diesigining your APIs such as information hiding, minimal completeness
+and loose coupling
+
+
+
+Patterns : How you design a good API. Accordingly, design patterns and
+idioms that are particularly helpful in API design. Pimpli idiom, 
+Singleton, Factory Method, Proxy, Adapter, Facade and Observer
+
+
+
+Design : Functional requirement gathering and use case modeling to drive the design of a clean and usable interface,
+as well as some techniques of object oriented analysis and object-oriented design. Includes a discussion on many of the problems that a large software project faces.
+These observations are takin form real-world experiences and provide insight into the issues that arise
+when doing large-scale API development .
+
+
+
+Styles : Creating high-quality aPIs with C++. This is a deep and complex topic
+and is, of course, the specific focus. Various styles of C and C++ APIs that can be
+adopted in projects such as flat C APIs object-oriented APIs, templated-based APIs,
+and data-driven APIs.
+
+
+C++ Usage : Various C++ language features that can impact good API design. 
+This inludes numerous important issues such as good constructor and operator style, 
+namespaces, pointer veruss refrence parameters, the use of friends, and how to 
+export symbols in a dynmaic library
+
+
+Performance : Issues in APIs and show you how to build high performing APIs in C++.
+This involves the use of const refrences, forward declarations, data 
+members clustering, and inlining. 
+
+
+
+Versioning : Complex aspects, starting with API versoning and how to maintain backward compatibiltiy. 
+one of the most important aspects of robust API design. 
+Backward, forward, functional, source and binary compatibility 
+how to evolve an API with minimal impact to your clients
+
+
+
+Documentation : API documentation . ill-defined without proper supporting
+documentation, good techniques for commenting and documenting your API, 
+
+Testing : Use of extensive testing lets you evolve an API with teh confidence that you are not breaking your client's program 
+Various types of autmated testing, including unit, integration and performance tests, and present exazMples of good testing
+methodologies, stub and mock objects, testing private code, and contract programming. 
+
+
+Scripting : API scripting, optional subject script bindings for a C++ API 
+so tthat can be called from languages such as python and ruby
+
+
+
+Extensibility : This can be a critical mechansim to promote adoption of your API and to help it survive fo rthe long term. 
+inheritance and tempaltes
+
+
+Libraries : how to create static and dynamic libraries. create libraries
+in order for your code to be uesd by others. 
+Interface designn issues when creating dynmaic libaries, 
+set of symbols tahy ouy expoort publicly. 
+
