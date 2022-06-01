@@ -1,0 +1,66 @@
+History of C++
+
+
+C++ started as 1979 as "C with classes " 
+
+Since then, the languages has een multiple major and minor releases
+
+There are many implemenmtations 
+
+
+C++ 98 1985 
+
+
+C++ 98 is the first standard
+
+foundation: Classes, hierarchies and templates
+
+
+C++03 at 2003
+
+Minor releases at 2003
+
+
+C++11 2011
+
+
+C++ was a major update the changed the look and feel 
+    Auto and decltype
+    Lambda expressions and <functional>
+    variadic templates
+    Multithreading features
+    Range-based for loop, list initializtaion, scoped enums, noexcept, and so on 
+
+
+C++ 14 2014 Minor Revision 
+    Variable templates
+    Polymorphic lambdas  and capture expressions 
+    Return type deduction for functions
+
+C++17 is a Major REvision 
+
+    Class tempalte argument deduction : 
+        if constexpr
+        inline variables
+
+    New features in STL:
+
+        <any> and <variant>
+
+        <optional> 
+        <filesystem> working iwth files handling files
+
+
+C++2a 2020 (minor release)
+
+C++2a is groundbreaking 
+C++2a is the largest update in history:
+    Concepts: A better interfaces for templates
+    Coroutines : Suspend and resume functions 
+    Ranges: functional way of dealing with collections
+    Modules: Get rid of header files 
+    With modules we can organizing header files in new way 
+
+C++2a is a new Language Yet, it remains C++ 
+Static type safety 
+
