@@ -1,0 +1,60 @@
+The course Overview
+
+Section 1 : 
+    Programming Paradigms
+    History of c++
+    Tools that can make Difference
+
+
+Section 2: 
+    Building Projects 
+    Using Pimpli Idioms
+    Modules : the new features of c++ 20 
+
+
+Section 3:
+    Interactions between components
+    Low level stuffs
+
+
+
+Section 4:
+
+    Create classes and class Hierarchies 
+    Copy and move constructors 
+
+
+Section 5:
+
+    Functions and functional programming
+    How to write functions and lambdas
+
+
+Section 6:
+    Generic code
+    Templates
+    Concept - new features of c++20
+
+
+Section 7 : 
+    Perfect container 
+    Ranges features of c++
+
+Section 8 : 
+
+    Concurrent data access
+    mutexes 
+    Atomics 
+
+Section 9:
+    Concurrent code 
+    task based parallelism
+
+Section 10 and 11:
+    Coroutines 
+    Functions 
+
+General Guidelines and enforcing them 
+C++ Core guidelines : Following the guidelines will help you to write code
+Take notes or look them later 
+
