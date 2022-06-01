@@ -1,0 +1,98 @@
+C++ is sometimes refered to as "oops"
+
+The object-oriented style is the backbone
+
+
+C++ is a multi-paradigm programming language
+
+One of the design goals of C++ is to let programmers pick their own programming style or paradigm 
+
+
+On the highest level, C++ is mostly imperative language
+
+We specify a sequence of commands that update the program's tate
+
+This is how the CPU executes instructions 
+
+
+
+Declarative Programming : 
+We express computation, 
+but not the control flow
+
+Specify what you want to do, instaed of how you want to do it . 
+example html ( declrative)
+
+
+
+Functional : A declartive style where functionsare first class citizens
+
+They can be passed around like objects
+
+
+We tell what function to apply to the ddata, without telling how to apply it 
+
+
+
+Example: Ranges in C++ 2a
+
+
+Generic Programming Style
+
+Seperate the implemtation of algoritms and data structre fform 
+C++ achieves this with templates
+
+Example zero: std::vector is a collection of elelmtns
+
+std::find suports any colelction that has iteratos and stores equality comparable elemtns
+
+
+Concurrent and Parallel Programming
+
+We can create threads
+Excute code asynchronously with std::async
+Synchronization primitives:atomics, mutsex, 
+
+
+C++ Is not perfect 
+It is easy to criticize 
+
+Large and complicated
+Difficult to learn 
+Manual Memory Management
+Static type system is complex
+Tries to be many thins
+
+
+Is there a better alternative
+
+    There are languages which are better at functional programming 
+        More object-oriented
+        Mort Portable
+        Easier to learn 
+        Easier to Program with 
+
+But there is not language as balanced and flexible as C++
+
+And C++ is greate for large projects
+
+C++ has enormous features 
+Your knowledge of C++ is like a toolbox with many levels
+
+Most commonly used features are at the top
+(For examples, loops and functions )
+
+
+Next level is containers and algorithsm ( STL containers, lambdas, )
+
+
+Templates and threads ( you wont use it frequently)
+
+The deeper you go, the less used is the tool 
+
+The toolbox is a useful metaphor 
+
+Everyone's toolbox is unique
+But always bring your entire toolbox with you, 
+because you never knwo what tools will be needed to solve next program 
+
