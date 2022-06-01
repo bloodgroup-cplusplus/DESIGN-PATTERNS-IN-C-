@@ -58,3 +58,29 @@ General Guidelines and enforcing them
 C++ Core guidelines : Following the guidelines will help you to write code
 Take notes or look them later 
 
+Github :isocoreguidelines
+These guidelines are written by most experienced developers in the world
+
+
+This Course For?
+    Not an intorductry code 
+    You already know come C++ and want to be a professional
+    You are a professional and want to improve your skills
+    You wanat to learn c++2a
+    Basic Knowledge of C++
+    Reprodcue coding examples we require c++ compiler
+    Clang 10 (used in this course)
+    Visual Studio 2019
+    Gcc 10 ( except modules)
+
+    Visual STduio code, and CMake
+
+
+Goals of the Course
+TAke your C++ skilss to the next level 
+Learn different programming styles
+Get hands on exampls
+Write safge and performant concurrent code
+Understand some of the most important C++ core guidelines
+Be among the first to learn and use modules, ranges, coroutines 
+
