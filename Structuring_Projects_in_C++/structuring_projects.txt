@@ -1,0 +1,83 @@
+Project structure means how project files folders and deliverables are organized
+How third party stuffs are managed
+Threre are many ways to organize the project
+
+
+
+Why is STructure Important?
+    Every project has a structure
+    Poor structre will make it hard to grow your project
+    C++ projects that are not well structured, will suffer from slow compilation 
+    Refactoring is Expensive 
+
+
+At the start of the project 
+    It is easy to make structures 
+    changes, fast and compilations 
+
+
+When project grows - Refactoring becomes expensive and compilation time suffers
+
+
+Maturity - NO one knows the entire project anymore compliation time can be hours
+
+
+
+It is important to start with good structure from beginning 
+
+
+Easier to explore code: Names are clear and files are easy to find
+
+Easier to extend code
+
+
+Easier to collaborate and to seperate responsibilities 
+
+Good structure also enables modularity 
+
+Structure is a form of documentation 
+
+Physical structure should reflect internal logic of the application 
+
+
+Levels 
+
+Projects are structured at multiple levels 
+
+                Applications (subsystem)
+                        
+                        contains 
+                Package 
+
+                        contains 
+
+                                Component : header and c++ file
+
+Package is the main unit of structure 
+
+Implemenatiton is not visible from the outside
+
+
+Packages depend onn each other 
+
+Control dependencies
+
+Circular dependencies should be avoided at all cost 
+
+The c++ core guidlines includes 
+
+
+Elements of stRucture in C++
+
+C++ project consists of header and source files, directiories, and supporting files
+
+Oftern a class is split into header and source files:
+    File name should match class name 
+
+    Don't overdo this : Not all classes deserve their own file 
+
+    Placing each class into own file is not a rule
+
+Classes can be grouped in namespaces
+
+Project can be split into libraries ( static, dynamic, header-only)
