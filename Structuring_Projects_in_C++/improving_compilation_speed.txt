@@ -1,0 +1,79 @@
+C++ can take a while to compile 
+
+Main load is on CPU
+
+Scales nicely 
+
+There are also a few tricks to make compilation faster
+
+
+But why is the compilation slow ?
+    There might be many reasons 
+    The first reason is wrong build settings 
+
+    Bad code structure might be an issue 
+
+    Unnecessary #includes
+
+    Complex code
+
+    Templates 
+
+    Inline Code 
+
+There are many reasons but there are reasons to spped up compilation 
+
+
+Configuring Build Tools 
+
+Compilation parallelizes Well
+
+
+Use as many cores as you can 
+
+
+For really large projects, use distributed compilation: IncrediBuild, 
+distcc, and FASTBuild
+
+Compiler optimizations affect performance
+
+
+Consider creating a build configuration 
+
+
+Turn them off in development:
+    This also simplifies debugging
+
+Precompiled Headers
+
+A headef file that is compiled before everything else in the project and #inluded in all CPP files:
+
+    Compiler does not have to parse that code again 
+    User #inlucde comomon libraries, such as STL
+
+Check your IDE and Compiler Docs for Precompiled Headers
+Precompiled Headers imporve speed 
+
+Compiler-Friendly Code
+
+#include the necessary minimum -> 
+always use include guards  #ifndef DAYTIME_CLIENT_H
+                           #define DAYTIME_CLIENT_H
+
+Forward-declare types as much as possible 
+                //forward declartions
+                namespace boost::asio
+                {
+                    class io_context;
+                }
+
+
+Reduce dependencies 
+
+
+Don't inline code unless absolutely-necessary
+
+When creating class templates, keep non-template code elsewhere
+
+Use the pimpl Idiom 
+
