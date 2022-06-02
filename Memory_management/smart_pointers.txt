@@ -1,0 +1,39 @@
+Smart pointers in standard C++
+
+* std::unique_ptr
+    * One and only one pointer to free store
+    * Strong ownership
+
+* std::shared_ptr
+
+    * Many pointers to free store
+    * Shared ownership
+
+
+* std::weak_ptr
+
+    * "Refrence" to shared_ptr
+    * No ownership
+
+
+
+The weak pointer is a weak handle to the shared pointer 
+
+
+Smart Pointers 
+
+Introduced with C++11
+Resoves many problems with memoryleaks
+
+Can  Tramsfer or share ownership without leaks
+
+
+
+Deprecates old std::auto_ptr
+
+Sometimes had unexpected behavior
+Replace these with std::unique_ptr
+
+
+Must always be put on the stack rather than on a heap 
+
