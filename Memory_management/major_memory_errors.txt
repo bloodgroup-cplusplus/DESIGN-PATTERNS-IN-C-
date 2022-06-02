@@ -1,0 +1,40 @@
+1) Memory Leaks
+    Forgetting delete/Free
+    Exception safety 
+
+2) If you are managing the memory yourself 
+    Delete allocated objects
+
+2. Mismatched allocation and dellocation 
+
+Allocation and deallocation comes in pairs
+
+
+* Allocation         Deallocation 
+
+* malloc =-------> Free ( heap)
+
+* new   =--------> delete (Free store)
+
+* new[] =--------> delete[] ( Array of objects on free store)
+
+
+
+3) Invalid Pointer
+
+Pointer to 
+    Deleted memory (dangling pointer)
+    Local Variable
+
+Not Initialized Yet
+
+
+
+4) Buffer Overrun 
+
+    *Array bounds violation 
+    * Writing past end of array
+
+    * Security Flaws
+
+5) 
