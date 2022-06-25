@@ -35,14 +35,14 @@
 #include<vector>
 
 
-voidPrintVector( const std::vector<float> & vec)
+void PrintVector( const std::vector<float> & vec)
 {
 
-    std::vector<float> :: const_iterator it;
-    for(it = vec.begin(); it! = vec.end(); ++it)
+    std::vector<float>::const_iterator *it;
+    for(*it = vec.begin(); *it!= vec.end();++it)
     {
         std::cout<<*it<<std::endl;
-
+        std::co
     }
 }
 
