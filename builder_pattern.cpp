@@ -13,21 +13,21 @@
 
 struct HtmlElement
 {
-    string name;
-    string text;
+    std::string name;
+    std::string text;
     std::vector<HtmElement> elements;
     const size_t indent_size = 2;
     HtmlElement(){}
-    HtmlElement() (const string & name, const string & text):name(name),text(text) {}
+    HtmlElement() (const std::string & name, const std::string & text):name(name),text(text) {}
     // this is the code for pretty printing that is present in the github repo
 
-    string str( int indent = 0 ) const
+    std::string str( int indent = 0 ) const
     {
-        ostringstream oss;
-        string i (indent_size* indent, ' ');
-        os<<i<< "<"<<name << ">"<<std::endl;
+        std::ostringstream oss;
+        std::string i (indent_size* indent, ' ');
+        oss<<i<< "<"<<name << ">"<<std::endl;
         if(text.size() > 0)
-            oss<<string(indent_size*(indent+1),' ') <<text<<std::endl;
+            oss<<std::string(indent_size*(indent+1),' ') <<text<<std::endl;
         for(const auto & e :elements)
             oss<<e.str(indent+1);
         oss<<i << "</" <<name << ">" << std::endl;
@@ -39,10 +39,10 @@ struct HtmlElement
 //fluent 
 struct HtmlBuilder
 {
-    HtmlBuilder &add_child(string child_name, string child_text)
+    HtmlBuilder &add_child(std::string child_name, std::string child_text)
     {
-        HtmlElement e{child_name, child_text};
-        root.elements.emplace_back(a);
+        HtmlElement e {child_name, child_text};
+        root.elements.emplace_back(e);
         return *this; 
     }
     HtmlElement root;
@@ -52,7 +52,7 @@ int main()
     // hello and world 
     // and we want it to have it on a part of html string 
 
-    string words[]= {"hello " , "world"};
+    std::string words[]= {"hello " , "world"};
 
  //   ostringstream oss;
   //  oss << "<ul>\n";
