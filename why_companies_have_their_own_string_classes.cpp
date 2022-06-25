@@ -17,16 +17,16 @@ class String
 {
     std::string s;
     public:
-        String (const string &s) : s(s) {}
+        String (const std::string &s) : s(s) {}
         String to_lower_copy() const
         {
             return {boost::to_lower_copy(s)};
         }
-        std::vector<string> split(const string & delimeter = " ") const 
+        std::vector<std::string> split(const string & delimeter = " ") const 
         {
-            std::vector<string> parts;
+            std::vector<std::string> parts;
             boost::split(parts, s, boost::is_any_of(delimeter), boost::token_compress_on);
-            return std::vector<string>(parts.begin(), parts.end());
+            return std::vector<std::string>(parts.begin(), parts.end());
             // we have taken global functions to these adapters
         }
         //std::string has a size() and length() 
