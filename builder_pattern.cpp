@@ -36,7 +36,7 @@ struct HtmlElement
 };
 
 
-//fluent 
+//fluent builder instead of a builder 
 struct HtmlBuilder
 {
     HtmlBuilder &add_child(std::string child_name, std::string child_text)
