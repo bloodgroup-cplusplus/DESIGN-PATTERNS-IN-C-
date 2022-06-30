@@ -34,7 +34,7 @@ enum class Relationship
 
 struct Person 
 {
-    string name; 
+    std::string name; 
 };
 
 // how to fix the situation of some chnanges by low-level 
@@ -44,7 +44,7 @@ struct Person
 
 struct RelationshipBrowser
 {
-    virtual std::vector<Person> find_all_children_of(const string &name) = 0;
+    virtual std::vector<Person> find_all_children_of(const std::string &name) = 0;
 };
 
 struct Relationships  // low-level 
@@ -52,7 +52,7 @@ struct Relationships  // low-level
     // we have a vector of tuples and inside the tuple we have two people and 
     // relationships 
 
-    std::vector<tuple<Person, Relationship, Person >> relations;
+    std::vector<std::tuple<Person, Relationship, Person >> relations;
 
 
     void add_parent_and_child( const Person & parent, const Person & child)
@@ -63,7 +63,7 @@ struct Relationships  // low-level
 
     }
 
-    std::vector<Person> find_all_children_of(const string & name) override
+    std::vector<Person> find_all_children_of(const std::string & name) override
     {
         std::vector<Person> result;
         for(auto && [first, rel,second]: relations)
