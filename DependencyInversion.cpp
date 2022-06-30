@@ -11,6 +11,7 @@
 
 #include<iostream>
 #include<cstdio>
+#include<iostream>
 #include<string>
 #include<vector>
 #include<fstream>
@@ -52,7 +53,7 @@ struct Relationships  // low-level
     // we have a vector of tuples and inside the tuple we have two people and 
     // relationships 
 
-    std::vector<std::tuple<Person, Relationship, Person >> relations;
+    std::vector<std::tuple <Person, Relationship, Person >> relations;
 
 
     void add_parent_and_child( const Person & parent, const Person & child)
@@ -75,7 +76,7 @@ struct Relationships  // low-level
             }
         }
     }
-    return result;
+    return  result;
 };
 
 
