@@ -1,6 +1,6 @@
-import daytime;
 
 #include<iostream>
+#include<daytime>
 
 int main(int argc, char *argv[])
 {

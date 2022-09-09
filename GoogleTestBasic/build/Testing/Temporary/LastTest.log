@@ -1,0 +1,19 @@
+Start testing: Jul 01 09:11 IST
+----------------------------------------------------------
+Unable to find executable: build/tests/slib_test
+1/1 Testing: atest
+1/1 Test: atest
+Command: ""
+Directory: /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/GoogleTestBasic/build/tests
+"atest" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"atest" end time: Jul 01 09:11 IST
+"atest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jul 01 09:11 IST

@@ -1,4 +1,4 @@
-#include "../include/inc.h"
+include "../include/inc.h"
 namespace lib
 {
     template<typename T>
@@ -9,3 +9,4 @@ namespace lib
         }
     
 }
+

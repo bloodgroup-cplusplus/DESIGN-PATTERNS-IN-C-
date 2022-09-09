@@ -4,13 +4,18 @@ project(googletest_sample)
 
 #get googletest
 include(FetchContent)
-FetchContent_Declare(googletest)
+FetchContent_Declare(googletest
     GIT_REPOSITORY https://github.com/google/googletest
-    GIT_TAG release-1.12.1
+    GIT_TAG release-1.12.1)
 
 FetchContent_GetProperties(googletest)
 #googletest_POPULATED
-#googletest
+#googletest_SOURCE_DIR
+#googletest_BUILD_DIR
+if(NOT googletest_POPULATED)
+    FetchContent_Populate(googletest)
+    add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BUILD_DIR},${CMAKE_BINARY_DIR}/googletest)
+endif()
 add_library(sumLibrary STATIC LibraryCode.cpp)
 
 add_executable(mainApp main.cpp)
@@ -18,4 +23,5 @@ target_link_libraries(mainApp sumLibrary)
 
 
 add_executable(testRunner test.cpp)
-target_link_libraries(testRunner sumLibrary)
+target_link_libraries(testRunner sumLibrary,gtest_main,gtest_main,gmock_main)
+

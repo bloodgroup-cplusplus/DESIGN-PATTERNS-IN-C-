@@ -1,0 +1,42 @@
+[
+{
+    "arguments": [
+        "clang",
+        "-Wno-documentation-unknown-command",
+        "-Wno-unknown-warning-option",
+        "-Wno-unknown-pragmas",
+        "-nostdinc",
+        "-nostdinc++",
+        "-g",
+        "-arch",
+        "arm64",
+        "-isysroot",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk",
+        "-std=gnu++17",
+        "-fsyntax-only",
+        "-m32",
+        "--target=arm64-apple-darwin21.3.0",
+        "-DQ_CREATOR_RUN",
+        "-F",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/System/Library/Frameworks",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include/c++/v1",
+        "-isystem",
+        "/Users/bhushansharma/Qt/Qt Creator.app/Contents/Resources/libexec/clang/lib/clang/14.0.3/include",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk/usr/include",
+        "-isystem",
+        "/Library/Developer/CommandLineTools/usr/include",
+        "-fmessage-length=0",
+        "-fdiagnostics-show-note-include-stack",
+        "-fretain-comments-from-system-headers",
+        "-fmacro-backtrace-limit=0",
+        "-ferror-limit=1000",
+        "-x",
+        "c++",
+        "/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT/main.cpp"
+    ],
+    "directory": "/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug/.qtc_clangd",
+    "file": "/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT/main.cpp"
+}
+]

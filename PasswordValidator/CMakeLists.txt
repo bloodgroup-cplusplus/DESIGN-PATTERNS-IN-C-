@@ -14,6 +14,10 @@ add_executable(PasswordValidator
         passwordvalidatordecorator.h
         digitpasswordvalidator.cpp
         digitpasswordvalidator.h
+        casepasswordvalidator.cpp
+        casepasswordvalidator.h
+        symbolpasswordvalidator.cpp
+        symbolpasswordvalidator.h
 
 )
 

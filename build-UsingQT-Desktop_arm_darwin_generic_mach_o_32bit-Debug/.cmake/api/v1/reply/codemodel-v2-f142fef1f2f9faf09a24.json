@@ -1,0 +1,61 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-5e9e04fd0090b83b7ad6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "UsingQT",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "UsingQT::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UsingQT-Debug-b59d84a2f1dee7de8285.json",
+					"name" : "UsingQT",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug",
+		"source" : "/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,185 @@
+## This file contains all the build statements describing the
+# compilation DAG.
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# 
+# Which is the root file.
+# =============================================================================
+
+# =============================================================================
+# Project: UsingQT
+# Configurations: Debug
+# =============================================================================
+
+#############################################
+# Minimal version of Ninja required by this file
+
+ninja_required_version = 1.5
+
+
+#############################################
+# Set configuration variable for custom commands.
+
+CONFIGURATION = Debug
+# =============================================================================
+# Include auxiliary files.
+
+
+#############################################
+# Include rules file.
+
+include CMakeFiles/rules.ninja
+
+# =============================================================================
+
+#############################################
+# Logical path to working directory; prefix for absolute paths.
+
+cmake_ninja_workdir = /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug/
+# =============================================================================
+# Object build statements for EXECUTABLE target UsingQT
+
+
+#############################################
+# Order-only phony target for UsingQT
+
+build cmake_object_order_depends_target_UsingQT: phony || CMakeFiles/UsingQT.dir
+
+build CMakeFiles/UsingQT.dir/main.cpp.o: CXX_COMPILER__UsingQT_Debug /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT/main.cpp || cmake_object_order_depends_target_UsingQT
+  DEP_FILE = CMakeFiles/UsingQT.dir/main.cpp.o.d
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -std=gnu++17
+  OBJECT_DIR = CMakeFiles/UsingQT.dir
+  OBJECT_FILE_DIR = CMakeFiles/UsingQT.dir
+  TARGET_COMPILE_PDB = CMakeFiles/UsingQT.dir/
+  TARGET_PDB = UsingQT.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target UsingQT
+
+
+#############################################
+# Link the executable UsingQT
+
+build UsingQT: CXX_EXECUTABLE_LINKER__UsingQT_Debug CMakeFiles/UsingQT.dir/main.cpp.o
+  FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk
+  OBJECT_DIR = CMakeFiles/UsingQT.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/UsingQT.dir/
+  TARGET_FILE = UsingQT
+  TARGET_PDB = UsingQT.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug && /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/bin/ccmake -S/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT -B/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug && /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/bin/cmake --regenerate-during-build -S/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT -B/Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug && /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug && /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug && /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Target aliases.
+
+# =============================================================================
+# Folder targets.
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/build-UsingQT-Desktop_arm_darwin_generic_mach_o_32bit-Debug
+
+build all: phony UsingQT
+
+# =============================================================================
+# Built-in targets
+
+
+#############################################
+# Re-run CMake if any of its inputs changed.
+
+build build.ninja: RERUN_CMAKE | /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT/CMakeLists.txt /Users/bhushansharma/Qt/Qt$ Creator.app/Contents/Resources/package-manager/auto-setup.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake
+  pool = console
+
+
+#############################################
+# A missing CMake input file is not an error.
+
+build /Users/bhushansharma/Programs/DESIGN-PATTERNS-IN-C-/UsingQT/CMakeLists.txt /Users/bhushansharma/Qt/Qt$ Creator.app/Contents/Resources/package-manager/auto-setup.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompiler.cmake.in /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCXXInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCommonLanguageInclude.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeCompilerIdDetection.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCXXCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompileFeatures.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerABI.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineCompilerId.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeDetermineSystem.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeFindBinUtils.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeGenericSystem.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeInitializeConfigs.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeLanguageInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeNinjaFindMake.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitIncludeInfo.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseImplicitLinkInfo.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeParseLibraryArchitecture.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystem.cmake.in /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInformation.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeSystemSpecificInitialize.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCXXCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/CMakeTestCompilerCommon.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ADSP-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Borland-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Clang.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Cray-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GHS-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/GNU.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IAR-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Intel-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/MSVC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PGI-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/PathScale-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SCO-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/TI-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/Watcom-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Internal/FeatureTesting.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-AppleClang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Apple-Clang.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Determine-CXX.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin-Initialize.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/Darwin.cmake /Users/bhushansharma/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.23/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.23.2/CMakeCXXCompiler.cmake CMakeFiles/3.23.2/CMakeSystem.cmake: phony
+
+
+#############################################
+# Clean all the built files.
+
+build clean: CLEAN
+
+
+#############################################
+# Print all primary targets available.
+
+build help: HELP
+
+
+#############################################
+# Make the all target the default.
+
+default all

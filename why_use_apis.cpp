@@ -62,7 +62,7 @@
 
 class StringEncryptor
 {
-    public:
+	public:
         ///set the key to use for the Encrypt() and Decrypt() calls
 
 
